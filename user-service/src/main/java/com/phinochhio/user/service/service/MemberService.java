@@ -2,13 +2,17 @@ package com.phinochhio.user.service.service;
 
 import com.phinochhio.user.service.domain.Member;
 import com.phinochhio.user.service.repository.MemberRepository;
-import com.phinochhio.user.service.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+
 
     /* 회원가입 */
     public Long join(Member member){
