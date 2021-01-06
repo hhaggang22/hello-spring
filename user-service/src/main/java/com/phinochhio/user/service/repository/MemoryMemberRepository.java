@@ -4,6 +4,8 @@ import com.phinochhio.user.service.domain.Member;
 
 import java.util.*;
 
+import org.springframework.stereotype.Repository;
+
 public class MemoryMemberRepository implements MemberRepository{
     public static Map<Long, Member> store = new HashMap<>(); //현재 DB가 없으니까 데이터 대신 저장할 HashMap생성
     private static long sequence = 0L; //key값 생성해주는 애
