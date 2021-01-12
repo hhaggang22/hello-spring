@@ -24,7 +24,7 @@ public class MemberController {
 
 	@GetMapping("/members/new")
 	public String createForm(){
-		return "members/createMemberForm";
+		return "/members/createMemberForm";
 	}
 
 	@PostMapping("/members/new")
@@ -41,7 +41,7 @@ public class MemberController {
 	public String list(Model model){
 		List<Member> members = memberService.findMembers();
 		model.addAttribute("members", members);
-		return "members/memberlist";
+		return "members/memberList";
 	}
 
 }
