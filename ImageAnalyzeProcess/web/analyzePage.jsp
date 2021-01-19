@@ -7,10 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <title>Label Select Page</title>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <h3> 이미지를 보고 라벨을 선택해주세요.</h3>
+        </div>
 
-</body>
+    </body>
 </html>
